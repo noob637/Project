@@ -2,7 +2,7 @@
 color 2
 :Menu
 cls
-echo Choose: 1. Searc 2. Kill Task 
+echo Choose: 1. Search 2. Kill Task 
 set /p answer="Enter 1 Or 2: "
 if not defined answer goto invalid
 if %answer%==1 (goto gettask)
@@ -61,4 +61,5 @@ goto endthings
 powershell -c (New-Object Media.SoundPlayer "C:\Windows\Media\chord.wav").PlaySync();
 echo ----------------------------------------
 echo Press Enter To Go Back & pause >nul
+
 goto Menu
