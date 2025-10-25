@@ -30,7 +30,7 @@ $Host.UI.RawUI.ForegroundColor = 'green'
 Add-Type -AssemblyName System.Windows.Forms
 Write-Host "Choose The Mod." -ForegroundColor Blue
 Write-Host "1. File Opener / 2. File Editor / 3. Taskkill & TaskSearch" -ForegroundColor Green
-$answer = Read-Host "Enter Mod 1 / 2" 
+$answer = Read-Host "Enter Mod 1 / 2 / 3" 
 
 function Task {
     C:\Users\Lenovo\Desktop\project1\taskfinder.bat
@@ -125,4 +125,5 @@ if ($answer -eq "2") {
 }
 if ($answer -eq "3") {
     Task
+
 }
